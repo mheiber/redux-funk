@@ -16,8 +16,8 @@ module.exports.funkMiddleware = function(store) {
       (action[queue] || []).forEach(function(funcAndArgs){
         var func = funcAndArgs[0]
         var maybeArgs = funcAndArgs[1]
-        var argsWithDispatch = [dispatch].concat(maybeArgs || [])
-        func.apply(null, argsWithDispatch)
+        var maybePromise = func.apply(null, maybeArgs)
+        maybePromise && maybePromise.then && maybePromise.then(dispatch)
       })
       return next(action)
     }
