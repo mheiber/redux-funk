@@ -1,0 +1,27 @@
+{
+  "name": "redux-funk",
+  "version": "1.0.0",
+  "description": "testable, dead-simple async middleware for Redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mheiber/redux-funk.git"
+  },
+  "keywords": [
+    "redux",
+    "async",
+    "asynchronous",
+    "middleware",
+    "side-effect",
+    "superfluous"
+  ],
+  "author": "Max Heiber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mheiber/redux-funk/issues"
+  },
+  "homepage": "https://github.com/mheiber/redux-funk#readme"
+}
