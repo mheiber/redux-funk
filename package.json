@@ -4,7 +4,8 @@
   "description": "declarative async outerware for Redux",
   "main": "index.js",
   "scripts": {
-    "build": "babel src/index.js --out-file dist/index.js",
+    "build": "mkdirp dist && babel src/index.js --out-file dist/index.js",
+    "prepublish": "npm run build",
     "test": "node ./test"
   },
   "repository": {
@@ -26,6 +27,7 @@
     "babel-cli": "^6.1.18",
     "babel-core": "^6.14.0",
     "babel-preset-es2015": "^6.14.0",
+    "mkdirp": "^0.5.1",
     "redux": "^3.6.0"
   },
   "author": "Max Heiber",
