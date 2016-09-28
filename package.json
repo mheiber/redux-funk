@@ -1,6 +1,6 @@
 {
   "name": "redux-funk",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "declarative async outerware for Redux",
   "main": "dist/index.js",
   "scripts": {
