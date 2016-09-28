@@ -1,6 +1,6 @@
 'use strict'
 const { deepEqual } = require('assert')
-const { createStore, applyMiddleware } = require('redux')
+const { createStore } = require('redux')
 const { coalesceFunks, funkMiddleware, call, runFunks } = require('./index.js')
 
 const asyncAction = payload => new Promise((resolve, reject) => {
@@ -20,13 +20,12 @@ const reducer = coalesceFunks((state = {text: 'initial'}, action) => {
 })
 
 const store = createStore(
-  reducer,
-  applyMiddleware(funkMiddleware)
+  reducer
 )
 
 runFunks(store)
 store.subscribe(() => {
-  console.log(store.getState())
+  store.getState()
 })
 store.dispatch({type: 'FIRST'})
 
