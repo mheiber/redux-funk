@@ -2,7 +2,7 @@
   "name": "redux-funk",
   "version": "2.1.0",
   "description": "declarative async outerware for Redux",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "mkdirp dist && babel src/index.js --out-file dist/index.js",
     "prepublish": "npm run build",
