@@ -28,7 +28,8 @@
     "babel-core": "^6.14.0",
     "babel-preset-es2015": "^6.14.0",
     "mkdirp": "^0.5.1",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "tape": "^4.6.0"
   },
   "author": "Max Heiber",
   "license": "ISC",
