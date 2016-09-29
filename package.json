@@ -1,10 +1,12 @@
 {
   "name": "redux-funk",
-  "version": "1.0.0",
-  "description": "testable, dead-simple async middleware for Redux",
-  "main": "index.js",
+  "version": "2.1.3",
+  "description": "declarative async outerware for Redux",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "node test.js"
+    "build": "mkdirp dist && babel src/index.js --out-file dist/index.js",
+    "prepublish": "npm run build",
+    "test": "node ./test"
   },
   "repository": {
     "type": "git",
@@ -13,11 +15,22 @@
   "keywords": [
     "redux",
     "async",
+    "asyncrhonous",
+    "functional",
+    "side-effect",
+    "declarative-effect",
     "asynchronous",
     "middleware",
-    "side-effect",
-    "superfluous"
+    "outerware"
   ],
+  "devDependencies": {
+    "babel-cli": "^6.1.18",
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "mkdirp": "^0.5.1",
+    "redux": "^3.6.0",
+    "tape": "^4.6.0"
+  },
   "author": "Max Heiber",
   "license": "ISC",
   "bugs": {
