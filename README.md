@@ -73,8 +73,12 @@ Here's what `runFunks` does:
 - Subscribe to the store. When the store updates, call each of the funks. Each funk with a return value returns a promise for an action.
 - When the promises resolve, dispatch the actions.
 
-You can use `redux-funk` without `runFunks`. Here are examples of why you might want to do this:
+> You can use `redux-funk` without `runFunks`. Here are examples of why you might want to do this:
 - Use callbacks instead of promises
 - Only dispatch the actions after a delay
 - Pass an api caller or other dependency to each funk
 - etc.
+
+# Examples
+
+See [redux-funk-examples](https://github.com/mheiber/redux-funk-examples).
