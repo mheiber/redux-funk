@@ -10,6 +10,10 @@ Using redux-funk, you can put all the logic and state management stuff in one pl
 
 This library combines (in my opinion) the best ideas from Redux Loop, redux-side-effect, and a few other libraries. It's pretty similar to Redux Loop, but the implementation is much simpler and shorter, and it enables you to program with reducers without having to worry about lifting effects.
 
+# Install
+
+`npm install redux-funk`
+
 # Usage
 
 Add declarative effects to your reducer. In this example, dispatching `{type: 'INCREMENT_ASYNC'}` increments the counter after one second.
