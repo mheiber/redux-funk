@@ -1,5 +1,7 @@
 # redux-funk
 
+![redux-funk](https://s-media-cache-ak0.pinimg.com/564x/4c/c3/d8/4cc3d881adf9cf78637f00ebc92eab6e.jpg)
+
 > Declarative async outerware for Redux
 
 # What
